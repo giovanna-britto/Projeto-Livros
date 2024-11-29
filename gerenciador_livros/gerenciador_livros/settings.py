@@ -10,5 +10,5 @@ class Settings(BaseSettings):
 
     # Configuração adicional para o carregamento do arquivo .env
     class Config:
-        env_file = ".env"  # Especifica o arquivo de ambiente (.env) de onde as configurações serão carregadas
+        env_file = ".env"  # Local do arquivo de configuração
         env_file_encoding = "utf-8"  # Define a codificação do arquivo .env como UTF-8

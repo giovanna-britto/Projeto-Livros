@@ -3,6 +3,14 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from gerenciador_livros.settings import Settings
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()  # Carrega o arquivo .env
+
+print(f"DATABASE_URL: {os.getenv('DATABASE_URL')}")
+
+
 # Configuração das variáveis de ambiente
 settings = Settings()
 
